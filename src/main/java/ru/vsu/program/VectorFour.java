@@ -1,3 +1,5 @@
+package ru.vsu.program;
+
 public class VectorFour {
     public Vector setVector(double k1, double k2,double k3, double k4) {
         return new Vector(k1,k2,k3,k4);

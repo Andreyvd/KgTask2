@@ -1,3 +1,5 @@
+package ru.vsu.program;
+
 public class VectorThree {
     public Vector setVector(double k1, double k2, double k3) {
         return new Vector(k1,k2,k3);
@@ -28,14 +30,14 @@ public class VectorThree {
     }
 
     public double scalarProduct(Vector v1, Vector v2){
-        return v1.getA() * v2.getA() + v1.getB() * v2.getB() + v1.getC() + v2.getC();
+        return v1.getA() * v2.getA() + v1.getB() * v2.getB() + v1.getC() * v2.getC();
     }
 
     public Vector vectorProduct(Vector v1, Vector v2){
         double x  = v1.getB() * v2.getC() - v2.getB() * v1.getC();
         double y  = v1.getA() * v2.getC() - v2.getA() * v1.getC();
         double z  = v1.getA() * v2.getB() - v2.getA() * v1.getB();
-        return new Vector(x,y,z);
+        return new Vector(x,-y,z);
     }
 
 }

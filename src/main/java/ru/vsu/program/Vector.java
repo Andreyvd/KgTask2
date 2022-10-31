@@ -1,3 +1,5 @@
+package ru.vsu.program;
+
 public class Vector {
     private double a;
     private double b;

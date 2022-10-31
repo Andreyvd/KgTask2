@@ -1,3 +1,5 @@
+package ru.vsu.program;
+
 public class VectorTwo {
 
     public Vector setVector(double k1, double k2) {
